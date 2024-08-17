@@ -1,36 +1,46 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-#define ll long long
-#define PB push_back
-#define MP make_pair
-#define F first
-#define S second
+#define fast_cin() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
+#define all(x) (x).begin(), (x).end()
+#define sz(x) ((ll)(x).size())
+#define ln "\n"
+#define pb push_back
+#define fi first
+#define se second
 #define PI 3.1415926535897932384626
-#define mod 1000000007
+typedef long long ll;
+#define printVector(a) for(int i=0; i<a.size(); i++){cout<<a[i]<<" ";}cout<<ln;
+#define take_vector(a) for(auto &x:a)cin>>x;
+#define take_matrix(a,m,n) for(int i=0; i<m; i++){for(int j=0; j<n; j++){cin>>a[i][j];}}
+#define print_matrix(a,m,n) for(int i=0; i<m; i++){for(int j=0; j<n; j++){cout<<a[i][j]<<" ";}cout<<ln;}
+#define print_array(a,n) for(int i=0; i<n; i++){cout<<a[i]<<" ";}cout<<ln;
+#define INF 2e18
+#define sum(a) accumulate(a.begin(), a.end(),0)
+#define max_ele(a) *max_element(a.begin(), a.end())
+#define min_ele(a) *min_element(a.begin(), a.end())
+ll MOD = 1000000007;
+/*--------------------------------------------------------------------------------------------------*/
 
 void solve() {
-    int n;
-    cin >> n;
-    vector<int> vec(n);
+    ll n;
+    cin >>n;
+    vector<ll> vec(n);
+    take_vector(vec);
+    printVector(vec);
     
-    for (int i = 0; i < n; ++i)cin >> vec[i];
-
 
 }
 int main() {
-#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#endif
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-    int t = 1;
+
+    fast_cin();
+    ll t;
+    t = 1;
     cin >> t;
 
-    while (t--) {
+    while(t--){
         solve();
     }
+
+
     return 0;
 }
